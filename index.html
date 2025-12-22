@@ -182,6 +182,119 @@
       </div>
     </section>
 
+    <!-- Try It Out Yourself -->
+    <section class="w-full bg-white px-4 py-12 sm:px-6 lg:px-8">
+      <div class="mx-auto max-w-6xl">
+        <!-- title -->
+         <div class="flex justify-center">
+          <div class="rounded-2xl bg-purple-400 px-10 py-4 text-center text-3xl font-bold text-white shadow-lg">
+            TRY IT OUT YOURSELF
+          </div>
+         </div>
+
+         <div class="mt-10 rounded-2xl bg-indigo-300 p-6 shadow-lg sm:p-8">
+          <!-- cards grid -->
+          <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            <!-- card 1 -->
+            <div class="task-card cursor-pointer rounded-2xl bg-purple-200 p-5 shadow-md transition-colors duration-200 hover:brightness-95">
+              <div class="flex items-center jsutify-between">
+                <span class="rounded-lg bg-purple-300 px-3 py-1 text-xs font-bold text-white">Morning Task</span>
+                <span class="rounded-lg bg-purple-300 px-3 py-1 text-xs font-bold text-white">+350xp</span>
+              </div>
+              <div class="mt-4 rounded-xl bg-purple-300 p-4 text-white font-semibold">
+                Start your day with a light workout.
+              </div>
+              <div class="mt-4 flex justify-end">
+                <span class="grid h-10 w-10 place-items-center rounded-full bg-purple-400 text-white font-bold">✓</span>
+              </div>
+            </div>
+
+            <!-- card 2 -->
+            <div class="task-card cursor-pointer rounded-2xl bg-purple-200 p-5 shadow-md transition-colors duration-200 hover:brightness-95">
+              <div class="flex items-center jsutify-between">
+                <span class="rounded-lg bg-purple-300 px-3 py-1 text-xs font-bold text-white">Afternoon Task</span>
+                <span class="rounded-lg bg-purple-300 px-3 py-1 text-xs font-bold text-white">+200xp</span>
+              </div>
+              <div class="mt-4 rounded-xl bg-purple-300 p-4 text-white font-semibold">
+                Create a study schedule.
+              </div>
+              <div class="mt-4 flex justify-end">
+                <span class="grid h-10 w-10 place-items-center rounded-full bg-purple-400 text-white font-bold">✓</span>
+              </div>
+            </div>
+
+            <!-- card 3 -->
+            <div class="task-card cursor-pointer rounded-2xl bg-purple-200 p-5 shadow-md transition-colors duration-200 hover:brightness-95">
+              <div class="flex items-center jsutify-between">
+                <span class="rounded-lg bg-purple-300 px-3 py-1 text-xs font-bold text-white">Evening Task</span>
+                <span class="rounded-lg bg-purple-300 px-3 py-1 text-xs font-bold text-white">+100xp</span>
+              </div>
+              <div class="mt-4 rounded-xl bg-purple-300 p-4 text-white font-semibold">
+                Cook a healthy dinner meal.
+              </div>
+              <div class="mt-4 flex justify-end">
+                <span class="grid h-10 w-10 place-items-center rounded-full bg-purple-400 text-white font-bold">✓</span>
+              </div>
+            </div>
+
+            <!-- card 4 -->
+            <div class="task-card cursor-pointer rounded-2xl bg-purple-200 p-5 shadow-md transition-colors duration-200 hover:brightness-95">
+              <div class="flex items-center jsutify-between">
+                <span class="rounded-lg bg-purple-300 px-3 py-1 text-xs font-bold text-white">Morning Task</span>
+                <span class="rounded-lg bg-purple-300 px-3 py-1 text-xs font-bold text-white">+150xp</span>
+              </div>
+              <div class="mt-4 rounded-xl bg-purple-300 p-4 text-white font-semibold">
+                Take out the recycling bin.
+              </div>
+              <div class="mt-4 flex justify-end">
+                <span class="grid h-10 w-10 place-items-center rounded-full bg-purple-400 text-white font-bold">✓</span>
+              </div>
+            </div>
+
+            <!-- card 5 -->
+            <div class="task-card cursor-pointer rounded-2xl bg-purple-200 p-5 shadow-md transition-colors duration-200 hover:brightness-95">
+              <div class="flex items-center jsutify-between">
+                <span class="rounded-lg bg-purple-300 px-3 py-1 text-xs font-bold text-white">Afternoon Task</span>
+                <span class="rounded-lg bg-purple-300 px-3 py-1 text-xs font-bold text-white">+250xp</span>
+              </div>
+              <div class="mt-4 rounded-xl bg-purple-300 p-4 text-white font-semibold">
+                Clean your room for 20 minutes.
+              </div>
+              <div class="mt-4 flex justify-end">
+                <span class="grid h-10 w-10 place-items-center rounded-full bg-purple-400 text-white font-bold">✓</span>
+              </div>
+            </div>
+
+            <!-- card 6 -->
+            <div class="task-card cursor-pointer rounded-2xl bg-purple-200 p-5 shadow-md transition-colors duration-200 hover:brightness-95">
+              <div class="flex items-center jsutify-between">
+                <span class="rounded-lg bg-purple-300 px-3 py-1 text-xs font-bold text-white">Evening Task</span>
+                <span class="rounded-lg bg-purple-300 px-3 py-1 text-xs font-bold text-white">+100xp</span>
+              </div>
+              <div class="mt-4 rounded-xl bg-purple-300 p-4 text-white font-semibold">
+                Turn off all light before bed.
+              </div>
+              <div class="mt-4 flex justify-end">
+                <span class="grid h-10 w-10 place-items-center rounded-full bg-purple-400 text-white font-bold">✓</span>
+              </div>
+            </div>
+          </div>
+         </div>
+      </div>
+    </section>
+
+    <!-- task complete script -->
+    <script>
+      const tasks = document.querySelectorAll('.task-card');
+
+      tasks.forEach((task ) => {
+        task.addEventListener("click", () => {
+          task.classList.toggle("bg-emerald-300");
+          task.classList.toggle("bg-purple-200");
+        });
+      });
+    </script>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
